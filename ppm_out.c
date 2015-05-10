@@ -112,9 +112,6 @@ void ppm_out_recalc(){
 			tmp = 1000;
 		}
 		
-		//add sync pulse
-		tmp += 300;
-		
 		ppm_out_comp[i] = ((((F_CPU/1000) * tmp)/1000)/64);
 	}
 	
